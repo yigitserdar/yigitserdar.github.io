@@ -1,0 +1,391 @@
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/* ----- HEADINGS ----- */
+
+h1 {
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 13%;
+    color: rgba(255, 255, 255, 0.73);
+}
+
+h2 {
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 70%;
+    margin: auto;
+}
+
+.logo {
+    height: 75px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+}
+
+
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+
+header {
+    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(first-page-image.jpeg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(first-page-image.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+/* daha sonra 
+.logo {
+    height: 40px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+    opacity: 0.5;
+    
+} */
+
+/* Main navi */
+.main-nav {
+    float: left;
+    list-style: none;
+    margin: 10;
+    padding: 0;
+    border: 0;
+    font-size: 20px;
+    
+    
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+    font-weight: 500;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    padding: 2px 3px 2px 5px;
+   
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color: rgb(34, 158, 214);
+    text-decoration: none;
+    background-color: rgb(224, 218, 218);
+    padding: 2px 3px 2px 5px;
+    border-radius: 3px;
+    font-weight: 500;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #555;
+  z-index: 9999;
+  opacity: 0.9;
+  
+}
+
+
+
+
+/* ----------------------------------------------- */
+/* ABOUT SECTION */
+/* ----------------------------------------------- */
+
+.about {
+    background-color: rgb(235, 235, 235);
+}
+
+.about h1 {
+    color: #555;
+    margin-top: 0;
+    padding-top: 1px;
+    font-size: 35px;
+    text-align: center;
+    display: block;
+}
+
+.about-text {
+    float: right;
+    text-align: justify;
+    padding-right: 1px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    
+    
+    
+}
+
+section img {
+    float: left;
+    width: 50%;
+    text-align: left;
+    padding-right: 5px;
+    margin-right: 20px;
+    border-radius: 15px;
+    
+}
+
+/* ----------------------------------------------- */
+/* WORK SECTION */
+/* ----------------------------------------------- */
+
+.work {
+    background-color: rgba(255, 255, 255, 0.37);
+    margin: 20px -20px;
+    
+    
+}
+
+
+.work h1 {
+    color: rgba(57, 49, 49, 0.84);
+    margin-top: 0;
+    padding-top: 1px;
+    font-size: 35px;
+    text-align: center;
+    display: block;
+}
+
+
+
+.work-text {
+    color: rgba(57, 49, 49, 0.84);
+    float: left;
+    text-align: justify;
+    padding-right: 1px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    
+    
+    
+}
+
+.work .project1 {
+    float: right;
+    width: 50%;
+    text-align: right;
+    padding-left: 5px;
+    margin-left: 20px;
+    border-radius: 15px;
+    
+
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: auto;
+    margin-left: 50%;
+    margin-top: -30px;
+    
+}
+
+/* buttons */
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    margin-top: -20px;
+    border: 2px solid rgb(34, 158, 214);
+    color: #555;
+    font-weight: 700;
+    margin-right: 15px;
+    
+}
+
+
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    color: rgb(34, 158, 214);
+    border: 2px solid #555;
+    background-color: #555;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+
+/* Contact */
+
+.form-box {
+    background-color: rgba(147, 147, 147, 0.55);
+    margin-top: 20px; 
+}
+
+.contact-form {
+    padding-left: 30%;
+    margin: 5px;
+    padding-bottom: 20px;
+        
+}
+
+
+
+
+
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+footer {
+    background-color: rgba(57, 56, 56, 0.9);
+    
+}
+footer p {
+    color: #888;
+    text-align: center;
+    font-size: 80%;
+    padding-left: 60px;
+}
+
+.footer-nav {
+    list-style: none;
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited, 
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+    
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-youtube {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-github-outline:hover {
+    color: black;
+}
+
+.ion-social-youtube:hover {
+    color: rgba(217, 36, 36, 0.95);
+    
+}
+.ion-social-codepen-outline:hover {
+    color: #fff;
+}
+
+
+
+
+
+
