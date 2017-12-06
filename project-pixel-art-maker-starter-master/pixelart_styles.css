@@ -7,7 +7,7 @@ h1 {
     font-family: 'VT323', cursive;
     font-size: 90px;
     margin: 0.2em;
-    background-color: #e6e600;
+    background-color: rgb(34, 158, 214);
     border: 5px solid black;
     border-radius: 25px 
 }
@@ -23,7 +23,7 @@ h2:first-of-type {
 
 
 table, tr, td {
-    border: 1px solid #ad8f8f;
+    border: 1px solid rgb(34, 158, 214);
 }
 
 table {
@@ -44,7 +44,7 @@ input[type=number] {
     height:2em;
     border-radius: 5px;
     outline:none;
-    border: 2px solid #e6e600;
+    border: 2px solid rgb(34, 158, 214);
     margin-left:10px;
     margin-right:10px;
 }
@@ -60,7 +60,7 @@ input[type=submit] {
     width: 8em;
     height: 2em;
     border-radius:20px;
-    background-color: #e6e600;
+    background-color: rgb(34, 158, 214);
     border-color: #000000;
     margin: 3px;
     font-size: 16px;
