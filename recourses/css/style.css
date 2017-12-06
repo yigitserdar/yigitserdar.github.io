@@ -82,7 +82,7 @@ header {
     background-attachment: fixed;
 }
 
-/* daha sonra 
+/* later 
 .logo {
     height: 40px;
     width: auto;
@@ -246,6 +246,37 @@ cite img {
     
 }
 
+/* ----------------------------------------------- */
+/* PROJECTS SECTION */
+/* ----------------------------------------------- */
+.project {
+    background-color: rgb(235, 235, 235);
+}
+
+.project h1 {
+    color: rgba(57, 49, 49, 0.84);
+    margin-top: 0;
+    padding-top: 1px;
+    font-size: 35px;
+    text-align: center;
+    display: block;
+    
+}
+
+.float {
+    float: left;      
+}
+
+.project img {
+    
+}
+
+
+
+
+
+
+
 /* buttons */
 
 .btn:link,
@@ -277,7 +308,6 @@ input[type=submit]:active {
     -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
-
 
 /* Contact */
 
