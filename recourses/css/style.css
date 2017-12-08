@@ -281,6 +281,7 @@ cite img {
 
 
 
+
 /* buttons */
 
 .btn:link,
@@ -427,9 +428,18 @@ footer p {
     color: #fff;
 }
 
+.ion-ios-infinite-outline:hover {
+    color: #fff;
+}
+
 .mail {
     padding-right: 50%;
 }
+.mqs {
+    display: none;
+}
+
+
 
 
 
