@@ -8,7 +8,7 @@ body {
     color: #555;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 15px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
@@ -46,7 +46,7 @@ h1 {
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 13%;
+    padding-top: 10%;
     color: rgba(255, 255, 255, 0.73);
 }
 
@@ -61,6 +61,7 @@ h2 {
 }
 
 .logo {
+    display: none;
     height: 75px;
     width: auto;
     float: left;
@@ -80,6 +81,7 @@ header {
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
+    max-height: 450px;
 }
 
 /* later 
@@ -94,13 +96,12 @@ header {
 
 /* Main navi */
 .main-nav {
-    float: left;
-    list-style: none;
-    margin: 10;
-    padding: 0;
-    border: 0;
-    font-size: 20px;
-    
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 1fr) 1fr;
+    grid-gap: 1px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;    
     
 }
 
@@ -133,6 +134,7 @@ header {
 }
 
 .sticky {
+  display: none;
   position: fixed;
   top: 0;
   width: 100%;
@@ -151,6 +153,8 @@ header {
 
 .about {
     background-color: rgb(235, 235, 235);
+    padding-top: 5%;
+    
 }
 
 .about h1 {
@@ -163,19 +167,14 @@ header {
 }
 
 .about-text {
-    float: right;
-    text-align: justify;
-    padding-right: 1px;
+    padding: 5px 5px;
     font-weight: 400;
     letter-spacing: 1px;
-    
-    
-    
+    font-size: 17px;
 }
 
 section img {
-    float: left;
-    width: 50%;
+    width: 100%;
     text-align: left;
     padding-right: 5px;
     margin-right: 20px;
@@ -190,6 +189,7 @@ section img {
 .work {
     background-color: rgba(255, 255, 255, 0.37);
     margin: 20px -20px;
+    padding-top: 5%;
     
     
 }
@@ -251,13 +251,14 @@ cite img {
 /* ----------------------------------------------- */
 .project {
     background-color: #fff;
+    padding-top: 5%;
     
 }
 
 .project-item {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: grid;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -293,12 +294,12 @@ input[type=submit] {
     border-radius: 200px;
     -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
-    margin-top: -20px;
     border: 2px solid rgb(34, 158, 214);
     color: #555;
     font-weight: 700;
-    margin-right: 15px;
-    
+    margin: auto;
+    width: 11%;
+    text-align: center;
 }
 
 
@@ -314,35 +315,21 @@ input[type=submit]:active {
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
-/* Contact 
-
-.form-box {
-    background-color: rgba(147, 147, 147, 0.55);
-    margin-top: 20px; 
-}
-
-.contact-form {
-    padding-left: 30%;
-    margin: 5px;
-    padding-bottom: 20px;
-        
-}
-
-
-*/
-
-
 
 /* ----------------------------------------------- */
 /* FOOTER */
 /* ----------------------------------------------- */
 
 footer {
-    background-color: rgba(57, 56, 56, 0.9);  
+    background-color: rgba(57, 56, 56, 0.9);
+    padding-top: 5%;
 }
 
 footer img {
-    margin-left: 44%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    
     
 }
 
@@ -363,6 +350,7 @@ footer p {
 
 /* social links */
 .social-links {
+    display: none;
     list-style: none;
     float: right;
 }
@@ -436,7 +424,24 @@ footer p {
     padding-right: 50%;
 }
 .mqs {
-    display: none;
+    list-style: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    padding-right: 30%;
+    padding-left: 30%;
+    
+    
+}
+
+.mq {
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.73);
 }
 
 
