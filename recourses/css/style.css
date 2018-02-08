@@ -152,7 +152,7 @@ header {
 /* ----------------------------------------------- */
 
 .about {
-    background-color: rgb(235, 235, 235);
+    background-color: #fff;
     padding-top: 5%;
     
 }
@@ -187,9 +187,9 @@ section img {
 /* ----------------------------------------------- */
 
 .work {
-    background-color: rgba(255, 255, 255, 0.37);
+    background-color: rgb(237, 237, 237);
     margin: 20px -20px;
-    padding-top: 5%;
+    padding: 2em;
     
     
 }
@@ -229,21 +229,29 @@ section img {
 
 }
 
-cite {
-    font-size: 90%;
-    margin-top: 25px;
+.employer-name {
     display: block;
+    padding: 2em;
+    text-align: center;
+    margin: 0 auto;
 }
 
 cite img {
-    height: 120px;
+    margin: 0 auto;
+    display: block;
+    height: 10em;
     border-radius: 50%;
-    margin-right: 10px;
     vertical-align: middle;
-    width: auto;
-    margin-left: 50%;
-    margin-top: -30px;
-    
+    width: auto; 
+}
+
+a#btn-work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
 }
 
 /* ----------------------------------------------- */

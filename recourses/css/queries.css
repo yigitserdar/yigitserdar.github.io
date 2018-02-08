@@ -37,7 +37,7 @@
     }
     
    .about {
-    background-color: rgb(235, 235, 235);
+    background-color: #fff;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -96,6 +96,84 @@ section img {
     text-align: center;
     display: block;
     
+}
+    /* ----------------------------------------------- */
+/* WORK SECTION */
+/* ----------------------------------------------- */
+
+.work {
+    background-color: rgb(237, 237, 237);
+    margin: 20px -20px;
+    padding: 2em;
+    
+    
+}
+
+
+.work h1 {
+    color: rgba(57, 49, 49, 0.84);
+    margin-top: 0;
+    padding-top: 1px;
+    font-size: 35px;
+    text-align: center;
+    display: block;
+}
+    
+    #work-h2 {
+        display: inline-block;
+        float: right;
+        padding-right: 1em;
+    }    
+
+
+
+.work-text {
+    color: rgba(57, 49, 49, 0.84);
+    float: left;
+    text-align: justify;
+    padding-right: 1px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    
+    
+    
+}
+
+.work .project1 {
+    float: right;
+    width: 50%;
+    text-align: right;
+    padding-left: 5px;
+    margin-left: 20px;
+    border-radius: 15px;
+    
+
+}
+
+.employer-name {
+    display: block;
+    padding: 11em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+cite img {
+    margin: 0 auto;
+    display: inline-block;
+    height: 8em;
+    border-radius: 50%;
+    vertical-align: middle;
+    width: auto; 
+}
+
+a#btn-work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-top: 18em;
 }
 
 }
