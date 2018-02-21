@@ -54,9 +54,6 @@
 .about-text {
     font-size: 20px;
     text-align: justify;
-    
-    
-    
 }
 
 section img {
@@ -95,9 +92,17 @@ section img {
     font-size: 35px;
     text-align: center;
     display: block;
-    
 }
-    /* ----------------------------------------------- */
+    
+.ion-arrow-down-a {
+    color: rgba(255, 255, 255, 0.73);
+    font-size: 2em;
+    display: block;
+    text-align: center;
+    padding-top: 2em;
+}    
+    
+/* ----------------------------------------------- */
 /* WORK SECTION */
 /* ----------------------------------------------- */
 
@@ -176,4 +181,18 @@ a#btn-work {
     margin-top: 18em;
 }
 
+}
+
+@media(max-width:600px) {
+    .work-text {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .work .project1 {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
 }

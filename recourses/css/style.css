@@ -60,12 +60,15 @@ h2 {
     margin: auto;
 }
 
-.logo {
+.main-header {
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.73);
+}
+
+.ion-arrow-down-a {
     display: none;
-    height: 75px;
-    width: auto;
-    float: left;
-    margin-top: 10px;
 }
 
 
@@ -83,16 +86,6 @@ header {
     background-attachment: fixed;
     max-height: 450px;
 }
-
-/* later 
-.logo {
-    height: 40px;
-    width: auto;
-    float: left;
-    margin-top: 10px;
-    opacity: 0.5;
-    
-} */
 
 /* Main navi */
 .main-nav {
@@ -225,8 +218,6 @@ section img {
     padding-left: 5px;
     margin-left: 20px;
     border-radius: 15px;
-    
-
 }
 
 .employer-name {
@@ -324,6 +315,8 @@ input[type=submit]:active {
 }
 
 
+
+
 /* ----------------------------------------------- */
 /* FOOTER */
 /* ----------------------------------------------- */
@@ -351,31 +344,32 @@ footer p {
     padding-left: 60px;
 }
 
-.footer-nav {
-    list-style: none;
-    text-align: center;
-}
 
-/* social links */
+/* ----------------------------------------------- */
+/* SOCIAL LINKS */
+/* ----------------------------------------------- */
+
+
+
+
 .social-links {
     display: none;
     list-style: none;
     float: right;
 }
 
-.footer-nav li,
+
 .social-links li {
     display: inline-block;
     margin-right: 20px;
 }
 
-.footer-nav li:last-child,
+
 .social-links li:last-child {
     margin-right: 0;
 }
 
-.footer-nav li a:link,
-.footer-nav li a:visited, 
+
 .social-links li a:link,
 .social-links li a:visited {
     text-decoration: none;
@@ -385,10 +379,7 @@ footer p {
     transition: color 0.2s;
 }
 
-.footer-nav li a:hover,
-.footer-nav li a:active {
-    color: #ddd;
-}
+
 
 .social-links li a:link,
 .social-links li a:visited {
@@ -428,9 +419,12 @@ footer p {
     color: #fff;
 }
 
+/* social links for small screens */
+
 .mail {
     padding-right: 50%;
 }
+
 .mqs {
     list-style: none;
     display: -webkit-inline-box;
@@ -442,14 +436,6 @@ footer p {
     padding-right: 30%;
     padding-left: 30%;
     
-    
-}
-
-.mq {
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.73);
 }
 
 
