@@ -1,5 +1,7 @@
 /* ----------------------------------------------- */
+
 /* BASIC SETUP */
+
 /* ----------------------------------------------- */
 
 html,
@@ -13,7 +15,10 @@ body {
     overflow-x: hidden;
 }
 
-.clearfix {zoom: 1;}
+.clearfix {
+    zoom: 1;
+}
+
 .clearfix:after {
     content: '.';
     clear: both;
@@ -23,9 +28,10 @@ body {
 }
 
 /* ----------------------------------------------- */
-/* REUSABLE COMPONENTS */
-/* ----------------------------------------------- */
 
+/* REUSABLE COMPONENTS */
+
+/* ----------------------------------------------- */
 
 .row {
     max-width: 1140px;
@@ -74,12 +80,14 @@ h2 {
 
 
 /* ----------------------------------------------- */
+
 /* HEADER */
+
 /* ----------------------------------------------- */
 
 header {
-    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(first-page-image.jpeg);
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(first-page-image.jpeg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(first-page-image.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(first-page-image.jpeg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -88,14 +96,15 @@ header {
 }
 
 /* Main navi */
+
 .main-nav {
     display: grid;
     grid-template-columns: 1fr repeat(2, 1fr) 1fr;
     grid-gap: 1px;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: flex-end;    
-    
+    justify-content: flex-end;
+
 }
 
 .main-nav li {
@@ -111,7 +120,7 @@ header {
     text-transform: uppercase;
     font-size: 90%;
     padding: 2px 3px 2px 5px;
-   
+
 }
 
 .main-nav li a:hover,
@@ -127,27 +136,29 @@ header {
 }
 
 .sticky {
-  display: none;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #555;
-  z-index: 9999;
-  opacity: 0.9;
-  
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #555;
+    z-index: 9999;
+    opacity: 0.9;
+
 }
 
 
 
 
 /* ----------------------------------------------- */
+
 /* ABOUT SECTION */
+
 /* ----------------------------------------------- */
 
 .about {
     background-color: #fff;
     padding-top: 5%;
-    
+
 }
 
 .about h1 {
@@ -172,19 +183,21 @@ section img {
     padding-right: 5px;
     margin-right: 20px;
     border-radius: 15px;
-    
+
 }
 
 /* ----------------------------------------------- */
+
 /* WORK SECTION */
+
 /* ----------------------------------------------- */
 
 .work {
     background-color: rgb(237, 237, 237);
     margin: 20px -20px;
     padding: 2em;
-    
-    
+
+
 }
 
 
@@ -206,9 +219,9 @@ section img {
     padding-right: 1px;
     font-weight: 400;
     letter-spacing: 1px;
-    
-    
-    
+
+
+
 }
 
 .work .project1 {
@@ -233,7 +246,7 @@ cite img {
     height: 10em;
     border-radius: 50%;
     vertical-align: middle;
-    width: auto; 
+    width: auto;
 }
 
 a#btn-work {
@@ -246,12 +259,15 @@ a#btn-work {
 }
 
 /* ----------------------------------------------- */
+
 /* PROJECTS SECTION */
+
 /* ----------------------------------------------- */
+
 .project {
     background-color: #fff;
     padding-top: 5%;
-    
+
 }
 
 .project-item {
@@ -276,7 +292,7 @@ a#btn-work {
     font-size: 35px;
     text-align: center;
     display: block;
-    
+
 }
 
 
@@ -318,7 +334,9 @@ input[type=submit]:active {
 
 
 /* ----------------------------------------------- */
+
 /* FOOTER */
+
 /* ----------------------------------------------- */
 
 footer {
@@ -330,13 +348,14 @@ footer img {
     display: block;
     margin: auto;
     text-align: center;
-    
-    
+
+
 }
 
 footer h2 {
     color: #fff;
 }
+
 footer p {
     color: #888;
     text-align: center;
@@ -346,11 +365,10 @@ footer p {
 
 
 /* ----------------------------------------------- */
+
 /* SOCIAL LINKS */
+
 /* ----------------------------------------------- */
-
-
-
 
 .social-links {
     display: none;
@@ -384,7 +402,7 @@ footer p {
 .social-links li a:link,
 .social-links li a:visited {
     font-size: 160%;
-    
+
 }
 
 .ion-social-facebook,
@@ -409,8 +427,9 @@ footer p {
 
 .ion-ios-email-outline:hover {
     color: #fff;
-    
+
 }
+
 .ion-social-codepen-outline:hover {
     color: #fff;
 }
@@ -435,13 +454,5 @@ footer p {
     width: 40%;
     padding-right: 30%;
     padding-left: 30%;
-    
+
 }
-
-
-
-
-
-
-
-
