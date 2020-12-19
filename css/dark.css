@@ -616,6 +616,15 @@ h2 {
   }
 }
 
+@media (max-width: 800px) {
+  .black-line,
+  .black-line::after,
+  .white-line,
+  .white-line::after {
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
   .name {
     width: 60%;
