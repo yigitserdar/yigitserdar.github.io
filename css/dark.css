@@ -623,23 +623,45 @@ h2 {
   .white-line::after {
     display: none;
   }
+
+  #about {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    grid-row-gap: 100px;
+    align-items: baseline;
+    justify-items: center;
+  }
 }
 
 @media (max-width: 600px) {
   .name {
     width: 60%;
   }
+}
 
-  .black-line {
-    margin-bottom: 20px;
+@media (max-width: 450px) {
+  #about {
+    align-items: center;
   }
+}
 
-  .white-line {
-    margin-bottom: 20px;
+@media (max-height: 415px) {
+  .black-line,
+  .black-line::after,
+  .white-line,
+  .white-line::after {
+    display: none;
   }
 
   .social {
-    left: 30px;
-    transform: translateX(-10px);
+    right: 50px;
+    left: unset;
+  }
+}
+
+@media screen and (max-width: 350px), screen and (max-height: 330px) {
+  #about {
+    display: inline-table;
   }
 }
