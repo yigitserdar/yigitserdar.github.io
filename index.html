@@ -1,108 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>SerdarYigit</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-</head>
-<body>
-	
-	<!--  -->
-	<div class="simpleslide100">
-		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg01.jpg');"></div>
-		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg02.jpg');"></div>
-		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg03.jpg');"></div>
-	</div>
+  <head>
+    <meta charset="utf-8" />
+    <title>Serdar Yiğit Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--title-icon--------->
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link data-mode="light" rel="stylesheet" type="text/css" href="css/light-theme.css" id="theme-link"/>
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+    <!--using FontAwesome---------------->
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-	<div class="size1 overlay1">
-		<!--  -->
-		<div class="size1 flex-col-c-m p-l-15 p-r-15 p-t-50 p-b-50">
-			<h3 class="l1-txt1 txt-center p-b-25">
-				Coming Soon
-			</h3>
+  <body>
+    <!--main------------------------>
+    <section id="main">
+      <!--navigation-------------------------------->
+      <nav>
+        <!--logo--->
+        <a href="#" class="logo">SY</a>
+        <!--menu--------->
+        <div class="toggle"></div>
+        <ul class="menu">
+          <li class="active"><a href="#main">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact-form">Contact</a></li>
+        </ul>
+        <!--language-->
+        <a href="index-tr.html" class="lang">tr</a>
+        <!-- dark mode toogle button -->
+        <button class="btn-toggle"></button>
+      </nav>
+      <!--name--------------------------->
+      <div class="name">
+        <!--hello------->
+        <p>Hello</p>
+        <!--name--->
+        <h1>I'm <font color="#17d1ac">Serdar</font> Yiğit</h1>
+        <!--details--------------->
+        <p class="details">
+          I'm an aspiring Front-End Developer and will forward to look into
+          business opportunities. You can check out my projects below.
+        </p>
+        <!--link button-------------------->
+        <a href="#portfolio" class="works-btn">See Works</a>
+      </div>
+      <!--down arrow-------------->
+      <div class="black-line"></div>
+      <!--social---------------->
+      <div class="social">
+        <a href="https://www.facebook.com/serdaryigit13" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/yigitserdar34" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/ygtsrdr/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/yigitserdar" target="_blank"><i class="fab fab fa-github"></i></a>
+      </div>
+    </section>
+    <!--about----------------------->
+    <section id="about">
+      <!--text---------------------->
+      <div class="about-text">
+        <h1>About Me</h1>
+        <h2>FrontEnd Developer</h2>
+        <p>
+          After working in different fields, I decided to have a career and
+          profession in the field of software, which has an important place
+          today and in the future. I graduated from Anatolian university web
+          design and programming. I also took courses on web technologies from
+          Udacity, Freecodecamp and Udemy.
+        </p>
+        <!--link button-------------------->
+        <a href="https://www.linkedin.com/in/serdaryigit/" target="_blank"
+          ><button>Linkedin Profile</button></a
+        >
+      </div>
+      <!--about-model----------------->
+      <div class="about-model">
+        <img src="images/about-model.png" alt="model" />
+      </div>
+      <!--down arrow-------------->
+      <div class="white-line"></div>
+      <!--social---------------->
+      <div class="social social-darkbackground">
+        <a href="https://www.facebook.com/serdaryigit13" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/yigitserdar34" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/ygtsrdr/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/yigitserdar" target="_blank"><i class="fab fab fa-github"></i></a>
+      </div>
+    </section>
+    <!--services-------------------->
 
-			<p class="m2-txt1 txt-center p-b-48">
-				Our website is under construction, follow us for update now!
-			</p>
+    <!--portfolio------------------->
+    <section id="portfolio">
+      <!--heading----------->
+      <h1 class="p-heading">Portfolio</h1>
+      <div class="post-wrapper">
+        <div class="post">
+          <img class="thumbnail" src="/images/s3.png" alt="" />
+          <div class="post-preview">
+            <h3 class="post-title">Pixel Art Maker</h3>
+            <p class="post-intro">
+              A responsive pixel draw application requested during Google Developer Challenge Scholarship.
+              <h4 class="tools-headline">Tools:</h4>
+              <p class="tools">Html, Css, jQuery</p>
+            </p>
+            <a href="https://yigitserdar.com/udacityPixelArt/" target="_blank">See Project</a>
+          </div>
+        </div>
 
-			<div class="flex-w flex-c-m cd100 p-b-33">
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span class="l2-txt1 p-b-9 days">35</span>
-					<span class="s2-txt1">Days</span>
-				</div>
+        <div class="post">
+          <img class="thumbnail" src="/images/s2.png" alt="" />
+          <div class="post-preview">
+            <h3 class="post-title">FindApp</h3>
+            <p class="post-intro">
+              A React app that allow you to find nearest service place that you need. 
+              You may allow your location.
+              <h4 class="tools-headline">Tools:</h4>
+              <p class="tools">React, Api, Axios</p>
+            </p>
+            <a href="https://yigitserdar.com/FindApp/" target="_blank">See Project</a>
+          </div>
+        </div>
 
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span class="l2-txt1 p-b-9 hours">17</span>
-					<span class="s2-txt1">Hours</span>
-				</div>
+        <div class="post">
+          <img class="thumbnail" src="/images/s1.png" alt="" />
+          <div class="post-preview">
+            <h3 class="post-title">Psd to code</h3>
+            <p class="post-intro">
+              It was a challenge for me to convert PSD to code. 
+              I considered responsive design with mobile-first approach.
+              <h4 class="tools-headline">Tools:</h4>
+              <p class="tools">Html, Css, jQuery</p>
+            </p>
+            <a href="https://yigitserdar.com/PSDtoHTMLchallenge01/" target="_blank">See Project</a>
+          </div>
+        </div>
+      </div>
+      <!--link button-------------------->
+      <div class="github-button-div">
+        <a href="https://github.com/yigitserdar" target="_blank"
+        ><button class="github-button">Github Profile</button></a
+      >
+      </div>
+      
+    </section>
+    <!--Contact-btn------------------>
+    
+    <!--contact-form------------------->
+    <section id="contact-form">
+      <form>
+        <!--left--------------------------------------->
+        <div class="contact-left">
+          <h1 class="c-l-heading">
+            <font style="border-bottom: 3px solid #1ed98b">Writ</font>e me
+          </h1>
+          <!--name-------->
+          <div class="f-name">
+            <font>Name</font>
+            <input type="text" placeholder="Full Name" />
+          </div>
+          <!--email-------->
+          <div class="f-email">
+            <font>Email</font>
+            <input type="email" placeholder="Example@gmail.com" />
+          </div>
+        </div>
+        <!--right------------------------------------------->
+        <div class="contact-right">
+          <!--message-------->
+          <div class="message">
+            <font>Message</font>
+            <textarea
+              name="message"
+              rows="5"
+              cols="20"
+              placeholder="Write Message..."
+            ></textarea>
+          </div>
+          <!--submit-btn------------>
+          <button>submit</button>
+        </div>
+      </form>
+    </section>
 
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span class="l2-txt1 p-b-9 minutes">50</span>
-					<span class="s2-txt1">Minutes</span>
-				</div>
+    <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+    <script type="text/javascript">
+      /*Responsive Navigation*/
+      $(document).ready(function () {
+        $(".toggle").click(function () {
+          $(".toggle").toggleClass("active");
+          $("nav ul").toggleClass("active-menu");
+        });
+        /*Hide navigation on click*/
+        $(".menu li a").click(function () {
+          $(".toggle").toggleClass("active");
+          $("nav ul").toggleClass("active-menu");
+        });
+      });
 
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span class="l2-txt1 p-b-9 seconds">39</span>
-					<span class="s2-txt1">Seconds</span>
-				</div>
-			</div>
-		</div>
-	</div>
+        /*Toogle Btw Dark theme css file*/
+  const btn = document.querySelector(".btn-toggle");
+// Select the stylesheet <link>
+  const theme = document.querySelector("#theme-link");
 
+// Listen for a click on the button
+  btn.addEventListener("click", function() {
+// If the current URL contains "light-theme.css"
+  if (theme.getAttribute("href") == "css/light-theme.css") {
+// ... then switch it to "dark-theme.css"
+  theme.href = "css/dark.css";
+// Otherwise...
+} else {
+// ... switch it to "light-theme.css"
+theme.href = "css/light-theme.css";
+}
+});
 
+// let themeLink = localStorage.getItem('theme')
 
-	
+// if(themeLink == null){
+// 	setTheme('light')
+// }else{
+// 	setTheme(themeLink)
+// }
 
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/moment.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<script>
-		$('.cd100').countdown100({
-			/*Set Endtime here*/
-			/*Endtime must be > current time*/
-			endtimeYear: 0,
-			endtimeMonth: 0,
-			endtimeDate: 35,
-			endtimeHours: 18,
-			endtimeMinutes: 0,
-			endtimeSeconds: 0,
-			timeZone: "" 
-			// ex:  timeZone: "America/New_York"
-			//go to " http://momentjs.com/timezone/ " to get timezone
-		});
-	</script>
-<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+// function setTheme(mode){
+// 	if(mode == 'light'){
+// 		document.getElementById('theme-style').href = 'css/light-theme.css'
+// 	} else {
+//         document.getElementById('theme-style').href = 'css/dark.css'
+//     }
 
-</body>
+// 	localStorage.setItem('themeLink', mode)
+// }
+    </script>
+  </body>
 </html>
