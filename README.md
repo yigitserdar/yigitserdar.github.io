@@ -2,4 +2,6 @@
 
 # This is my Portfolio website
 
-Visit : www.yigitserdar.com
+# It is a draft right now.
+
+<a href="https://yigitserdar.com" target="_blank">Visit Me</a>
