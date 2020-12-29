@@ -306,6 +306,10 @@ h2 {
   padding-bottom: 1rem;
 }
 
+.fa-envelope {
+  margin-right: 5px;
+}
+
 .mail {
   margin-top: 1em;
   display: grid;
@@ -509,6 +513,19 @@ h2 {
     align-items: baseline;
     justify-items: center;
   }
+
+  .fa-2x {
+    font-size: 1em;
+  }
+  .footer-wrapper ul li {
+    border: none;
+  }
+  .footer-wrapper ul li:hover.github,
+  .footer-wrapper ul li:hover.facebook,
+  .footer-wrapper ul li:hover.twitter,
+  .footer-wrapper ul li:hover.instagram {
+    border: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -520,6 +537,13 @@ h2 {
 @media (max-width: 450px) {
   #about {
     align-items: center;
+  }
+
+  .footer-wrapper ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0;
   }
 }
 
