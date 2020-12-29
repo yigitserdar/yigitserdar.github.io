@@ -53,8 +53,15 @@ nav {
   color: #6c707c;
   font-size: 12px;
 }
+ul.menu {
+  margin-left: auto;
+}
 .lang {
   color: #292929;
+}
+a.lang {
+  margin-left: auto;
+  margin-right: 1em;
 }
 .logo {
   font-size: 25px;
@@ -68,6 +75,9 @@ nav {
 
 .toggle:hover {
   cursor: pointer;
+}
+div.toggle::before {
+  margin-left: 30px;
 }
 
 .btn-toggle {
@@ -158,23 +168,6 @@ nav {
   cursor: pointer;
 }
 
-.social {
-  position: absolute;
-  left: 50px;
-  bottom: 50px;
-  display: flex;
-}
-.social a {
-  margin: 6px 12px;
-}
-.social i {
-  color: rgba(18, 17, 17, 0.4);
-  font-size: 14px;
-}
-.social a:hover i {
-  color: #17d1ac;
-  transition: all ease 0.5s;
-}
 #about {
   width: 100%;
   height: 90vh;
@@ -222,10 +215,6 @@ h2 {
   background-color: #ffffff;
   transition: all ease 0.3s;
   cursor: pointer;
-}
-
-.social-darkbackground i {
-  color: #fff;
 }
 
 #portfolio {
@@ -510,7 +499,6 @@ h2 {
     grid-template-columns: 1fr;
     padding: 1em;
     grid-row-gap: 100px;
-    align-items: baseline;
     justify-items: center;
   }
 
@@ -544,13 +532,6 @@ h2 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 0;
-  }
-}
-
-@media (max-height: 415px) {
-  .social {
-    right: 50px;
-    left: unset;
   }
 }
 
