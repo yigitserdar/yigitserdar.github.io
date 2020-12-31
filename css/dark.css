@@ -417,14 +417,18 @@ h2 {
   }
 }
 @media (max-width: 970px) {
-  .main-model,
-  .about-model {
-    display: none;
-  }
   #main,
   #about {
     justify-content: center;
     padding-top: 0px;
+  }
+
+  .about-model {
+    display: none;
+  }
+
+  .main-model img {
+    height: 300px;
   }
   .main-text,
   .about-text {
@@ -502,8 +506,15 @@ h2 {
     display: grid;
     grid-template-columns: 1fr;
     padding: 1em;
-    grid-row-gap: 100px;
     justify-items: center;
+  }
+
+  .main-model {
+    display: block;
+  }
+
+  .main-model img {
+    height: 200px;
   }
 
   .fa-2x {
@@ -521,6 +532,10 @@ h2 {
 }
 
 @media (max-width: 450px) {
+  #main {
+    grid-row-gap: 20px;
+  }
+
   #main,
   #about {
     align-items: center;
@@ -536,7 +551,7 @@ h2 {
   }
 }
 
-@media (max-height: 720px) {
+@media (max-height: 750px) {
   #about {
     height: auto;
   }
