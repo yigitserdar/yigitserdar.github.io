@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Serdar Yiğit Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--title-icon--------->
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link data-mode="light" rel="stylesheet" type="text/css" href="css/light-theme.css" id="theme-link"/>
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" href="css/works.css">
+    <!--using FontAwesome---------------->
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav>
+      <!--logo--->
+      <a href="#" class="logo">SY</a>
+      <!--menu--------->
+      <div class="toggle"></div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">Works</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+      <!--language-->
+      <a href="works-tr.html" class="lang">tr</a>
+      <!-- dark mode toogle button -->
+      <button class="btn-toggle"></button>
+    </nav>
+    <!--portfolio------------------->
+    <section id="portfolio">
+        <!--heading----------->
+        <h1 class="p-heading">Projects</h1>
+        <div class="post-wrapper">
+          <div class="post">
+            <img class="thumbnail" src="/images/s3.png" alt="" />
+            <div class="post-preview">
+              <h3 class="post-title">Pixel Art Maker</h3>
+              <p class="post-intro">
+                A responsive pixel draw application requested during Google Developer Challenge Scholarship.
+                <h4 class="tools-headline">Tools:</h4>
+                <p class="tools">Html, Css, jQuery</p>
+              </p>
+              <a href="https://yigitserdar.com/udacityPixelArt/" target="_blank">See Project</a>
+            </div>
+          </div>
+  
+          <div class="post">
+            <img class="thumbnail" src="/images/s2.png" alt="" />
+            <div class="post-preview">
+              <h3 class="post-title">FindApp</h3>
+              <p class="post-intro">
+                A React app that allow you to find nearest service place that you need. 
+                You may allow your location.
+                <h4 class="tools-headline">Tools:</h4>
+                <p class="tools">React, Api, Axios</p>
+              </p>
+              <a href="https://yigitserdar.com/FindApp/" target="_blank">See Project</a>
+            </div>
+          </div>
+  
+          <div class="post">
+            <img class="thumbnail" src="/images/s1.png" alt="" />
+            <div class="post-preview">
+              <h3 class="post-title">Psd to code</h3>
+              <p class="post-intro">
+                It was a challenge for me to convert PSD to code. 
+                I considered responsive design with mobile-first approach.
+                <h4 class="tools-headline">Tools:</h4>
+                <p class="tools">Html, Css, jQuery</p>
+              </p>
+              <a href="https://yigitserdar.com/PSDtoHTMLchallenge01/" target="_blank">See Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!--footer------------------>
+      <footer class="footer">
+        <div class="mail">
+          <a href="mailto:yigitserdar34@gmail.com"><i class="far fa-envelope"></i>yigitserdar34@gmail.com</a>
+        </div>
+        <div class="footer-wrapper">
+          <ul>
+            <li class="facebook"><a href="https://www.facebook.com/serdaryigit13" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+            <li class="twitter"><a href="https://twitter.com/yigitserdar34" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/ygtsrdr/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+            <li class="github"><a href="https://github.com/yigitserdar" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+    </footer>
+    <div class="copyright">
+      <small>&copy; Copyright 2021, Serdar Yiğit</small>
+  </div>
+      <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+      <script type="text/javascript">
+        /*Responsive Navigation*/
+        $(document).ready(function () {
+          $(".toggle").click(function () {
+            $(".toggle").toggleClass("active");
+            $("nav ul").toggleClass("active-menu");
+          });
+          /*Hide navigation on click*/
+          $(".menu li a").click(function () {
+            $(".toggle").toggleClass("active");
+            $("nav ul").toggleClass("active-menu");
+          });
+        });
+  
+          /*Toogle Btw Dark theme css file*/
+    const btn = document.querySelector(".btn-toggle");
+  // Select the stylesheet <link>
+    const theme = document.querySelector("#theme-link");
+  
+  // Listen for a click on the button
+    btn.addEventListener("click", function() {
+  // If the current URL contains "light-theme.css"
+    if (theme.getAttribute("href") == "css/light-theme.css") {
+  // ... then switch it to "dark-theme.css"
+    theme.href = "css/dark.css";
+  // Otherwise...
+  } else {
+  // ... switch it to "light-theme.css"
+  theme.href = "css/light-theme.css";
+  }
+  });
+</script>
+  </body>
+</html>
