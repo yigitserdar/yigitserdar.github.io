@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--title-icon--------->
     <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/photo.css">
     <link data-mode="light" rel="stylesheet" type="text/css" href="css/light-theme.css" id="theme-link"/>
     <link id="theme-style" rel="stylesheet" type="text/css" href="">
     <link rel="stylesheet" href="css/works.css">
@@ -27,61 +28,26 @@
       <div class="toggle"></div>
       <ul class="menu">
         <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="#">Works</a></li>
-        <li><a href="photography.html">Photography</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li class="active"><a href="photography.html">Photography</a></li>
       </ul>
       <!--language-->
       <a href="works-tr.html" class="lang">tr</a>
       <!-- dark mode toogle button -->
       <button class="btn-toggle"><i class="far fa-moon"></i></button>
     </nav>
-    <!--portfolio------------------->
-    <section id="portfolio">
-        <!--heading----------->
-        <h1 class="p-heading">Projects</h1>
-        <div class="post-wrapper">
-          <div class="post" data-aos="flip-left" data-aos-duration="1500">
-            <img class="thumbnail" src="/images/s3.png" alt="" />
-            <div class="post-preview">
-              <h3 class="post-title">Pixel Art Maker</h3>
-              <p class="post-intro">
-                A responsive pixel draw application requested during Google Developer Challenge Scholarship.
-                <h4 class="tools-headline">Tools:</h4>
-                <p class="tools">Html, Css, jQuery</p>
-              </p>
-              <a href="https://yigitserdar.com/udacityPixelArt/" target="_blank">See Project</a>
-            </div>
+    <div class="container">
+        <div class="slider-outer">
+          <img src="https://i.hizliresim.com/9mGmo8.png" class="prev" alt="Prev">
+          <div class="slider-inner">
+            <img src="https://i.hizliresim.com/Mdkdp9.png" class="active">
+            <img src="https://i.hizliresim.com/QVQVBg.jpg">
+            <img src="https://i.hizliresim.com/XPdPkD.jpg">
+            <img src="https://i.hizliresim.com/LbQv7Z.png">
           </div>
-  
-          <div class="post" data-aos="flip-left" data-aos-duration="1500">
-            <img class="thumbnail" src="/images/s2.png" alt="" />
-            <div class="post-preview">
-              <h3 class="post-title">FindApp</h3>
-              <p class="post-intro">
-                A React app that allow you to find nearest service place that you need. 
-                You may allow your location.
-                <h4 class="tools-headline">Tools:</h4>
-                <p class="tools">React, Api, Axios</p>
-              </p>
-              <a href="https://yigitserdar.com/FindApp/" target="_blank">See Project</a>
-            </div>
-          </div>
-  
-          <div class="post" data-aos="flip-left" data-aos-duration="1500">
-            <img class="thumbnail" src="/images/s1.png" alt="" />
-            <div class="post-preview">
-              <h3 class="post-title">Psd to code</h3>
-              <p class="post-intro">
-                It was a challenge for me to convert PSD to code. 
-                I considered responsive design with mobile-first approach.
-                <h4 class="tools-headline">Tools:</h4>
-                <p class="tools">Html, Css, jQuery</p>
-              </p>
-              <a href="https://yigitserdar.com/PSDtoHTMLchallenge01/" target="_blank">See Project</a>
-            </div>
-          </div>
+          <img src="https://i.hizliresim.com/qGEGMq.png" class="next" alt="Next">
         </div>
-      </section>
+      </div>
   
       <!--footer------------------>
       <footer class="footer">
@@ -102,6 +68,24 @@
   </div>
       <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
       <script type="text/javascript">
+      $(document).ready(function() {
+  
+  $(".prev").on("click", function() {
+    let prevImg = $("img.active").prev(".slider-inner img");
+    if (prevImg.length == 0) {
+      prevImg = $(".slider-inner img:last");
+    } $("img.active").removeClass("active");
+    prevImg.addClass("active");
+  });
+  
+  $(".next").on("click", function() {
+    let nextImg = $("img.active").next(".slider-inner img");
+    if (nextImg.length == 0) {
+      nextImg = $(".slider-inner img:first");
+    } $("img.active").removeClass("active");
+    nextImg.addClass("active");
+  });
+});
         /*Responsive Navigation*/
         $(document).ready(function () {
           $(".toggle").click(function () {
