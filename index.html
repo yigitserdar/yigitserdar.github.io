@@ -9,11 +9,14 @@
     <link rel="shortcut icon" href="images/favicon.png" />
     <link data-mode="light" rel="stylesheet" type="text/css" href="css/light-theme.css" id="theme-link"/>
     <link id="theme-style" rel="stylesheet" type="text/css" href="">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--using FontAwesome---------------->
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body>
@@ -68,7 +71,8 @@
         >
       </div>
       <!--about-model----------------->
-      <div class="about-model">
+      <div class="about-model" data-aos="fade-up"
+      data-aos-duration="3000">
         <img src="images/about-model.png" alt="about model" />
       </div>
     </section>
@@ -79,7 +83,7 @@
       <!--heading----------->
       <h1 class="p-heading">Portfolio</h1>
       <div class="post-wrapper">
-        <div class="post">
+        <div class="post" data-aos="flip-left" data-aos-duration="1500">
           <img class="thumbnail" src="/images/s3.png" alt="" />
           <div class="post-preview">
             <h3 class="post-title">Pixel Art Maker</h3>
@@ -92,7 +96,7 @@
           </div>
         </div>
 
-        <div class="post">
+        <div class="post" data-aos="flip-left" data-aos-duration="1500">
           <img class="thumbnail" src="/images/s2.png" alt="" />
           <div class="post-preview">
             <h3 class="post-title">FindApp</h3>
@@ -106,7 +110,7 @@
           </div>
         </div>
 
-        <div class="post">
+        <div class="post" data-aos="flip-left" data-aos-duration="1500">
           <img class="thumbnail" src="/images/s1.png" alt="" />
           <div class="post-preview">
             <h3 class="post-title">Psd to code</h3>
@@ -132,7 +136,7 @@
     <!--footer------------------>
     <footer class="footer">
       <div class="mail">
-        <a href="mailto:yigitserdar34@gmail.com"><i class="far fa-envelope"></i>yigitserdar34@gmail.com</a>
+        <a href="mailto:yigitserdar34@gmail.com"><i class="far fa-envelope" data-aos="flip-right" data-aos-duration="2500"></i>yigitserdar34@gmail.com</a>
       </div>
       <div class="footer-wrapper">
         <ul>
@@ -198,6 +202,7 @@ theme.href = "css/light-theme.css";
 
 // 	localStorage.setItem('themeLink', mode)
 // }
+AOS.init();
     </script>
   </body>
 </html>

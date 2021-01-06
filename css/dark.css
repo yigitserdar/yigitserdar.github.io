@@ -318,6 +318,10 @@ h2 {
   color: #fff;
 }
 
+.mail a:hover {
+  color: #17d1ac;
+}
+
 .footer-wrapper {
   display: grid;
   justify-content: center;
