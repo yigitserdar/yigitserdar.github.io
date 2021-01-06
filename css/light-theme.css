@@ -109,42 +109,10 @@ div.toggle::before {
 }
 
 .btn-toggle {
-  color: #fff;
-  background-color: #292929;
   padding: 0.5rem;
   text-decoration: none;
   border: none;
-}
-
-.btn-toggle::before {
-  content: "🌑";
-  animation: moon 2s infinite;
-}
-@keyframes moon {
-  12.5% {
-    content: "🌑";
-  }
-  25% {
-    content: "🌒";
-  }
-  37.5% {
-    content: "🌓";
-  }
-  50% {
-    content: "🌔";
-  }
-  62.5% {
-    content: "🌕";
-  }
-  75% {
-    content: "🌖";
-  }
-  87.5% {
-    content: "🌗";
-  }
-  100% {
-    content: "🌘";
-  }
+  background-color: #f4f7ff;
 }
 
 .btn-toggle:hover {

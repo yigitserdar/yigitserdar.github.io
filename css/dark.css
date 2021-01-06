@@ -149,6 +149,10 @@ div.toggle::before {
   outline: none;
 }
 
+.fa-moon {
+  display: none !important;
+}
+
 .active a,
 .menu li a:hover {
   background-color: #17d1ac;
