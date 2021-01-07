@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--title-icon--------->
     <link rel="shortcut icon" href="images/favicon.png" />
-    <link rel="stylesheet" href="css/photo.css">
     <link data-mode="light" rel="stylesheet" type="text/css" href="css/light-theme.css" id="theme-link"/>
     <link id="theme-style" rel="stylesheet" type="text/css" href="">
     <link rel="stylesheet" href="css/works.css">
@@ -23,7 +22,7 @@
   <body>
     <nav>
       <!--logo--->
-      <a href="#" class="logo">SY</a>
+      <a href="#" class="logo"><img id="logo" src="images/logo-light.png" alt="logo-light"></a>
       <!--menu--------->
       <div class="toggle"></div>
       <ul class="menu">
@@ -32,22 +31,10 @@
         <li class="active"><a href="photography.html">Photography</a></li>
       </ul>
       <!--language-->
-      <a href="works-tr.html" class="lang">tr</a>
+      <a href="#" class="lang">tr</a>
       <!-- dark mode toogle button -->
       <button class="btn-toggle"><i class="far fa-moon"></i></button>
     </nav>
-    <div class="container">
-        <div class="slider-outer">
-          <img src="https://i.hizliresim.com/9mGmo8.png" class="prev" alt="Prev">
-          <div class="slider-inner">
-            <img src="https://i.hizliresim.com/Mdkdp9.png" class="active">
-            <img src="https://i.hizliresim.com/QVQVBg.jpg">
-            <img src="https://i.hizliresim.com/XPdPkD.jpg">
-            <img src="https://i.hizliresim.com/LbQv7Z.png">
-          </div>
-          <img src="https://i.hizliresim.com/qGEGMq.png" class="next" alt="Next">
-        </div>
-      </div>
   
       <!--footer------------------>
       <footer class="footer">
@@ -116,6 +103,25 @@
   theme.href = "css/light-theme.css";
   }
   });
+
+/*Toogle Btw logos*/
+
+// Select the logo <id>
+  const image = document.querySelector("#logo");
+
+// Listen for a click on the button
+  btn.addEventListener("click", function() {
+// If the current URL contains "light-theme.css"
+  if (theme.getAttribute("href") == "css/light-theme.css") {
+// ... then assign light logo
+  image.src = "images/logo-light.png";
+// Otherwise...
+} else {
+// ... switch it to dark logo
+image.src = "images/logo-dark.png";
+}
+});
+
   AOS.init();
 </script>
   </body>

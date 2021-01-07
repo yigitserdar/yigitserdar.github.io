@@ -22,7 +22,7 @@
   <body>
     <nav>
       <!--logo--->
-      <a href="#" class="logo">SY</a>
+      <a href="#" class="logo"><img id="logo" src="images/logo-light.png" alt="logo-light"></a>
       <!--menu--------->
       <div class="toggle"></div>
       <ul class="menu">
@@ -132,6 +132,25 @@
   theme.href = "css/light-theme.css";
   }
   });
+
+/*Toogle Btw logos*/
+
+// Select the logo <id>
+  const image = document.querySelector("#logo");
+
+// Listen for a click on the button
+  btn.addEventListener("click", function() {
+// If the current URL contains "light-theme.css"
+  if (theme.getAttribute("href") == "css/light-theme.css") {
+// ... then assign light logo
+  image.src = "images/logo-light.png";
+// Otherwise...
+} else {
+// ... switch it to dark logo
+image.src = "images/logo-dark.png";
+}
+});
+
   AOS.init();
 </script>
   </body>

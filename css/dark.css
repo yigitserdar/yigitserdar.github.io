@@ -55,7 +55,7 @@ nav {
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  padding: 10px 50px;
+  padding: 0px 10px;
   background-color: #121212;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
   z-index: 1;
@@ -82,12 +82,11 @@ a.lang {
   margin-right: 1em;
 }
 
-.logo {
-  font-size: 25px;
-  font-weight: bold;
-  color: #e5e5e5;
-  font-family: Poppins;
+.logo img {
+  width: 100px;
+  height: 100px;
 }
+
 .toggle {
   display: none;
 }
@@ -461,9 +460,6 @@ h2 {
   .toggle.active:before {
     content: "\f00d" !important;
   }
-  nav {
-    padding: 10px 30px;
-  }
 
   nav ul {
     position: absolute;
@@ -471,7 +467,7 @@ h2 {
     height: auto;
     box-sizing: border-box;
     background-color: #0f0f0f;
-    top: 50px;
+    top: 100px;
     left: 0;
     transition: 0.5s;
     overflow: hidden;
@@ -509,6 +505,10 @@ h2 {
 }
 
 @media (max-width: 800px) {
+  .main-text {
+    padding-top: 4em;
+  }
+
   #main,
   #about {
     display: grid;
@@ -556,6 +556,12 @@ h2 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  #main {
+    padding-top: 3em;
   }
 }
 
