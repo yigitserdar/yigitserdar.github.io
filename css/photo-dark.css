@@ -1,0 +1,80 @@
+body {
+  background-color: #1f1f1f;
+}
+
+h1 {
+  color: #e5e5e5;
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  display: block;
+}
+.title-photo {
+  font-family: calibri;
+  font-size: 2.5rem;
+  text-align: center;
+  color: black;
+  font-weight: 400;
+  padding-top: 4em;
+  letter-spacing: 2px;
+}
+
+/* Grid Format */
+/*Formats the text inside the image*/
+.container-photo > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+.container-photo > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container-photo {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
+  overflow: hidden;
+}
+
+img {
+  border-radius: 10px;
+  padding: 5px;
+}
+.description {
+  display: none;
+  position: absolute;
+  color: #e5e5e5;
+}
+
+.container-photo > div:hover {
+  transform: scale(1.1);
+}
+.container-photo > div:hover .description {
+  display: block;
+  text-align: center;
+}
+
+.container-photo > div:hover img {
+  opacity: 0.7;
+}
+
+div.mail {
+  padding-top: 1em;
+}
+
+html,
+footer,
+div.copyright {
+  background-color: #161616;
+}
+
+@media (min-width: 998px) {
+  .container-photo {
+    min-height: calc(100vh - 220px);
+    margin-bottom: 0;
+  }
+}

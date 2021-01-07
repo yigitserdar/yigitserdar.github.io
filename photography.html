@@ -9,7 +9,8 @@
     <link rel="shortcut icon" href="images/favicon.png" />
     <link data-mode="light" rel="stylesheet" type="text/css" href="css/light-theme.css" id="theme-link"/>
     <link id="theme-style" rel="stylesheet" type="text/css" href="">
-    <link rel="stylesheet" href="css/works.css">
+    <link rel="stylesheet" href="css/photo.css">
+    <link id="photo-dark-style" rel="stylesheet" href="">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--using FontAwesome---------------->
     <script
@@ -35,6 +36,41 @@
       <!-- dark mode toogle button -->
       <button class="btn-toggle"><i class="far fa-moon"></i></button>
     </nav>
+
+    <header class="title-photo">
+      <h1>Photos</h1>
+ </header>
+
+  <!-- Grid -->
+  <section class="container-photo">
+     
+      <div>
+          <img src="https://images.pexels.com/photos/6430351/pexels-photo-6430351.jpeg?cs=srgb&dl=pexels-serdar-yi%C4%9Fit-6430351.jpg&fm=jpg" alt="First description" />
+          <span class="description">Akvaryum: Antalya</span>
+      </div>
+      <div>
+          <img src="https://images.pexels.com/photos/6430418/pexels-photo-6430418.jpeg?cs=srgb&dl=pexels-serdar-yi%C4%9Fit-6430418.jpg&fm=jpg" alt="Second description">
+          <span class="description">Akvaryum: Antalya</span>
+      </div>
+      <div>
+          <img src="https://images.pexels.com/photos/6430492/pexels-photo-6430492.jpeg?cs=srgb&dl=pexels-serdar-yi%C4%9Fit-6430492.jpg&fm=jpg" alt="Third description">
+          <span class="description">Akvaryum: Antalya
+          </span>
+      </div>
+      <div>
+        <img src="https://images.pexels.com/photos/6430586/pexels-photo-6430586.jpeg?cs=srgb&dl=pexels-serdar-yi%C4%9Fit-6430586.jpg&fm=jpg" alt="First description" />
+        <span class="description">Gündoğmuş</span>
+    </div>
+    <div>
+        <img src="https://images.pexels.com/photos/6430669/pexels-photo-6430669.jpeg?cs=srgb&dl=pexels-serdar-yi%C4%9Fit-6430669.jpg&fm=jpg" alt="Second description">
+        <span class="description">İstanbul</span>
+    </div>
+    <div>
+        <img src="images/DSC_0071.JPG" alt="Third description">
+        <span class="description">İstanbul
+        </span>
+    </div>
+  </section>
   
       <!--footer------------------>
       <footer class="footer">
@@ -90,6 +126,7 @@
     const btn = document.querySelector(".btn-toggle");
   // Select the stylesheet <link>
     const theme = document.querySelector("#theme-link");
+    const darkPhoto = document.querySelector("#photo-dark-style")
   
   // Listen for a click on the button
     btn.addEventListener("click", function() {
@@ -97,10 +134,12 @@
     if (theme.getAttribute("href") == "css/light-theme.css") {
   // ... then switch it to "dark-theme.css"
     theme.href = "css/dark.css";
+    darkPhoto.href = "css/photo-dark.css";
   // Otherwise...
   } else {
   // ... switch it to "light-theme.css"
   theme.href = "css/light-theme.css";
+  darkPhoto.href = "css/photo.css";
   }
   });
 
