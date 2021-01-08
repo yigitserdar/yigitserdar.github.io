@@ -237,7 +237,7 @@ h2 {
   letter-spacing: 2px;
 }
 
-.github-button {
+.all-works-button {
   width: 180px;
   height: 40px;
   border-radius: 20px;
@@ -247,14 +247,14 @@ h2 {
   color: #fff;
   letter-spacing: 3px;
 }
-.github-button:hover {
+.all-works-button:hover {
   background-color: #17d1ac;
   color: black;
   transition: all ease 0.3s;
   cursor: pointer;
 }
 
-.github-button-div {
+.all-works-div {
   display: flex;
   justify-content: center;
   padding-bottom: 1rem;
