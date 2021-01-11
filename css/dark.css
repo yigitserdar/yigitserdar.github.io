@@ -253,6 +253,10 @@ h2 {
   color: #17d1ac;
 }
 
+.post-preview a:hover {
+  color: #e5e5e5;
+}
+
 .post-title {
   color: #e5e5e5;
   margin: 0;
